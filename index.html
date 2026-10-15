@@ -1,200 +1,492 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#111a15" />
+    <meta
+      name="description"
+      content="Teboho Vicent Matela is a Software Engineering with Multimedia graduate in Lesotho who builds web, mobile and desktop applications."
+    />
+    <meta property="og:title" content="Teboho Vicent Matela — Software Engineer" />
+    <meta
+      property="og:description"
+      content="Software Engineering with Multimedia graduate building practical web, mobile and desktop applications with a focus on usability and visual clarity."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <title>Teboho Vicent Matela Portfolio</title>
+    <title>Teboho Vicent Matela — Software Engineer</title>
   </head>
-  <body>
-    <header id="home">
-      <nav>
-        <h1>Teboho Matela</h1>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+  <body data-theme="dark">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav shell" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Teboho Matela, home">
+          <span class="brand-mark">TM</span>
+          <span>Teboho Matela</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a class="nav-contact" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+          <button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Toggle color theme">
+            <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
+            </svg>
+            <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.1 15.2A8.5 8.5 0 0 1 8.8 3.9 8.5 8.5 0 1 0 20.1 15.2Z"></path>
+            </svg>
+          </button>
+        </div>
       </nav>
     </header>
 
-    <section class="about" id="about">
-      <h2>About Me</h2>
-      <div class="container">
-        <div><img src="matela.png" alt="Matela's picture" /></div>
-        <div>
-          <article>
-            <h4>Hi, I'm Matela;</h4>
-            <h3>
-              <strong
-                >Software Engineering <br />
-                with Multimedia Student</strong
-              >
-            </h3>
-            <p>
-              I am a second-year BSc Software Engineering with Multimedia
-              student at Limkokwing University of Creative Technology, Lesotho.
-              I am committed to advancing technology accessibility and awareness
-              throughout Lesotho.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="services custom-style" id="services">
-      <h2>Services</h2>
-      <div class="container">
-        <div class="items-1 item">
-          <img class="other" src="cpp.jpg" alt="C++" />
-          <p>C++ for developing fast speed desktop applications</p>
-        </div>
-        <div class="items-2 item">
-          <img class="webdesign" src="webdesign.jpg" alt="Web Design" />
-          <p>Web design development using HTML, CSS, and JS</p>
-        </div>
-        <div class="items-3 item">
-          <img class="other" src="adobe.png" alt="Adobe Icon" />
-          <p>
-            Multimedia design using Adobe software like Photoshop, After
-            Effects, and Illustrator
+    <main id="main">
+      <section class="hero shell" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="availability-dot"></span> Based in Lesotho · Open to opportunities</p>
+          <h1>Thoughtful software.<br /><span>Built to make a difference.</span></h1>
+          <p class="hero-intro">
+            I’m <strong>Teboho Vicent Matela</strong>, a Software Engineering with Multimedia graduate
+            who builds useful web, mobile and desktop applications with solid engineering foundations
+            and a multimedia perspective.
           </p>
-        </div>
-        <div class="items-3 item">
-          <img class="other" src="js.jpg" alt="JavaScript Icon" />
-          <p>
-            JavaScript programming of web application and desktop application
-            development, and making responsive websites
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="work" id="work">
-      <h2>Work</h2>
-      <div class="container">
-        <img src="work1.jpg" alt="Project 1" />
-        <img src="work2.jpg" alt="Project 2" />
-        <img src="work3.png" alt="Project 3" />
-        <img class="img4" src="work5.jpg" alt="Project 5" />
-        <img src="work6.jpg" alt="Project 6" />
-        <img src="work7.jpg" alt="Project 7" />
-      </div>
-    </section>
-
-    <section class="cv" id="cv">
-      <h2>Curriculum Vitae</h2>
-      <div class="container">
-        <div class="cv-content">
-          <div class="column">
-            <h3>Teboho Vicent Matela</h3>
-            <p><strong>Date of Birth:</strong> August 25, 2003</p>
-            <p><strong>Phone:</strong> +266 5951 0068 / +266 6284 6473</p>
-            <p>
-              <strong>Email:</strong>
-              <a href="mailto:tebohovmatela@gmail.com"
-                >tebohovmatela@gmail.com</a
-              >
-            </p>
-
-            <h4>Professional Summary</h4>
-            <p>
-              2nd year Software Engineering with Multimedia student at
-              Limkokwing University of Creative Technology, aspiring to become a
-              full-stack web developer. Experienced in developing desktop
-              console applications, web applications, and mobile applications,
-              as well as creating multimedia content such as posters,
-              infographics, and animations.
-            </p>
-
-            <h4>Education</h4>
-            <ul>
-              <li>
-                <strong>Primary Certificate:</strong> Botha Bothe Camp Primary
-                School, 2016
-              </li>
-              <li>
-                <strong>Junior Certificate (JC):</strong> Botha Bothe High
-                School, 2019
-              </li>
-              <li>
-                <strong
-                  >Lesotho General Certificate of Secondary Education
-                  (LGCSE):</strong
-                >
-                Botha Bothe High School, 2021
-              </li>
-              <li>
-                <strong>Currently:</strong> 2nd year Software Engineering with
-                Multimedia student at Limkokwing University of Creative
-                Technology, will be a 3rd year student when school opens
-              </li>
-            </ul>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
+            <a class="button button-quiet" href="mailto:tebohovmatela@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
           </div>
-          <div class="column">
-            <h4>Work Experience</h4>
-            <p>
-              No formal job experience, but freelanced on personal projects
-              including creating a funeral tribute video for a friend and
-              designing school logos.
+          <div class="hero-meta">
+            <span>Software engineering graduate</span>
+            <span>Web · Mobile · Desktop applications</span>
+            <span>Open to full-time &amp; freelance work</span>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Portrait of Teboho Vicent Matela">
+          <div class="portrait-frame">
+            <img
+              src="assets/teboho.webp"
+              alt="Teboho Vicent Matela"
+              width="640"
+              height="848"
+              fetchpriority="high"
+            />
+          </div>
+          <div class="portrait-note">
+            <span class="note-mark" aria-hidden="true">✳</span>
+            <span><strong>Engineering with perspective</strong><br />Code, craft &amp; clear communication</span>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#about"><span></span> Scroll to explore</a>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="shell about-grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow">A little about me</p>
+            <h2>Building for people,<br />not just screens.</h2>
+          </div>
+          <div class="about-copy reveal">
+            <p class="lead">
+              I’m a Software Engineering with Multimedia graduate who builds useful web, mobile and
+              desktop applications, bringing engineering foundations together with usability and visual clarity.
             </p>
+            <p>
+              My strongest practical work is building full-stack web applications, Firebase-backed
+              platforms, mobile experiences and desktop software. Projects such as PTROS, TechHub
+              Lesotho and LAQS show how I apply those skills to real product needs.
+            </p>
+            <p>
+              I hold a BSc in Software Engineering with Multimedia from Limkokwing University of Creative
+              Technology in Lesotho. My projects have also given me hands-on experience exploring a broad
+              toolkit across frontend, backend, cloud and automation. I’m based in Lesotho and ready for
+              full-time roles and thoughtful freelance collaborations.
+            </p>
+            <a class="text-link" href="https://www.linkedin.com/in/teboho-vicent-matela-527a9a284/" target="_blank" rel="noopener noreferrer">
+              More about my background <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+        <div class="shell values-row reveal" aria-label="Working principles">
+          <div><span>01</span><strong>Thoughtful by design</strong></div>
+          <div><span>02</span><strong>Reliable by default</strong></div>
+          <div><span>03</span><strong>Always learning</strong></div>
+        </div>
+      </section>
 
-            <h4>Awards and Achievements</h4>
-            <ul>
-              <li>
-                Certificate of Achievement for being a student with A* plus
-                credits, LGCSE 2021, Botha Bothe High School
-              </li>
-            </ul>
-
-            <h4>Projects</h4>
-            <ul>
-              <li>
-                <strong>KFC Order Timing Management System:</strong> Developed a
-                front-end web application that allows users to insert order
-                details through a clear GUI and provides the time for when the
-                order will be ready.
-              </li>
-            </ul>
-
-            <h4>Skills</h4>
-            <ul>
-              <li>
-                Programming Languages: Java, JavaScript, C++, Python (basic)
-              </li>
-              <li>Web Technologies: HTML, CSS</li>
-              <li>Languages: English, Sesotho</li>
-            </ul>
-            <nav class="footer-nav2">
-              <ul>
-                <li>
-                  <a href="#"><img src="Asset 2.png" alt="Facebook" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="Asset 3.png" alt="WhatsApp" /></a>
-                </li>
-                <li>
-                  <a href="mailto:tebohovmatela@gmail.com"
-                    ><img src="Asset 4.png" alt="Email"
-                  /></a>
-                </li>
-                <li>
-                  <a href="tel:+26659510068"
-                    ><img src="Asset 5.png" alt="Phone"
-                  /></a>
-                </li>
+      <section class="section skills-section" id="skills">
+        <div class="shell">
+          <div class="section-heading section-heading-row reveal">
+            <div>
+              <p class="eyebrow">Practical strengths &amp; toolkit</p>
+              <h2>Skills I bring to the work.</h2>
+            </div>
+            <p class="section-side-note">Hands-on skills shaped by real projects,<br />with a broad toolkit to draw from.</p>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card reveal">
+              <h3>Languages</h3>
+              <ul class="skill-tags" aria-label="Languages">
+                <li><img src="assets/logos/typescript.svg" alt="" loading="lazy" decoding="async" />TypeScript</li>
+                <li><img src="assets/logos/javascript.svg" alt="" loading="lazy" decoding="async" />JavaScript</li>
+                <li><img src="assets/logos/openjdk.svg" alt="" loading="lazy" decoding="async" />Java</li>
+                <li><img src="assets/logos/cplusplus.svg" alt="" loading="lazy" decoding="async" />C++</li>
+                <li><img src="assets/logos/python.svg" alt="" loading="lazy" decoding="async" />Python</li>
+                <li><img src="assets/logos/html5.svg" alt="" loading="lazy" decoding="async" />HTML</li>
+                <li><img src="assets/logos/css.svg" alt="" loading="lazy" decoding="async" />CSS</li>
               </ul>
-            </nav>
+            </article>
+            <article class="skill-card reveal">
+              <h3>Frontend &amp; mobile</h3>
+              <ul class="skill-tags" aria-label="Frontend and mobile technologies">
+                <li><img src="assets/logos/react.svg" alt="" loading="lazy" decoding="async" />React</li>
+                <li><img src="assets/logos/react.svg" alt="" loading="lazy" decoding="async" />React Native</li>
+                <li><img src="assets/logos/vite.svg" alt="" loading="lazy" decoding="async" />Vite</li>
+                <li><img src="assets/logos/tailwindcss.svg" alt="" loading="lazy" decoding="async" />Tailwind CSS</li>
+                <li><span class="skill-monogram" aria-hidden="true">Rr</span>React Router</li>
+              </ul>
+            </article>
+            <article class="skill-card reveal">
+              <h3>Backend &amp; cloud</h3>
+              <ul class="skill-tags" aria-label="Backend and cloud technologies">
+                <li><img src="assets/logos/firebase.svg" alt="" loading="lazy" decoding="async" />Firebase</li>
+                <li>Auth</li>
+                <li>Firestore</li>
+                <li>Realtime Database</li>
+                <li>Cloud Functions</li>
+                <li><img src="assets/logos/nodedotjs.svg" alt="" loading="lazy" decoding="async" />Node.js</li>
+              </ul>
+            </article>
+            <article class="skill-card reveal">
+              <h3>Desktop &amp; tools</h3>
+              <ul class="skill-tags" aria-label="Desktop technologies and tools">
+                <li>JavaFX</li>
+                <li>Swing</li>
+                <li><img src="assets/logos/git.svg" alt="" loading="lazy" decoding="async" />Git</li>
+                <li><img src="assets/logos/pnpm.svg" alt="" loading="lazy" decoding="async" />pnpm</li>
+                <li><img src="assets/logos/turborepo.svg" alt="" loading="lazy" decoding="async" />Turbo</li>
+                <li><img src="assets/logos/vercel.svg" alt="" loading="lazy" decoding="async" />Vercel</li>
+                <li><img src="assets/logos/cloudflare.svg" alt="" loading="lazy" decoding="async" />Cloudflare Pages</li>
+              </ul>
+            </article>
+            <article class="skill-card reveal">
+              <h3>Multimedia &amp; creative tools</h3>
+              <ul class="skill-tags text-tags" aria-label="Multimedia tools and experience">
+                <li><span class="skill-monogram creative-mark mark-photoshop" aria-hidden="true">Ps</span>Photoshop</li>
+                <li><span class="skill-monogram creative-mark mark-illustrator" aria-hidden="true">Ai</span>Illustrator</li>
+                <li><span class="skill-monogram creative-mark mark-aftereffects" aria-hidden="true">Ae</span>After Effects</li>
+                <li><img src="assets/logos/unity.svg" alt="" loading="lazy" decoding="async" />Unity · VR</li>
+                <li><img src="assets/logos/blender.svg" alt="" loading="lazy" decoding="async" />Blender</li>
+                <li><span class="skill-monogram creative-mark mark-3dsmax" aria-hidden="true">3ds</span>3ds Max</li>
+              </ul>
+            </article>
+            <article class="skill-card reveal">
+              <h3>Software Engineering &amp; Emerging Technologies</h3>
+              <ul class="skill-tags text-tags" aria-label="Software engineering practices and emerging technologies">
+                <li>System design</li>
+                <li>Engineering practices</li>
+                <li>Agile development</li>
+                <li>Software testing</li>
+                <li>Human–Computer Interaction</li>
+                <li>AI</li>
+                <li>Security</li>
+              </ul>
+            </article>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <footer id="contact">
-      <hr />
-      <p class="copyright">07.05.2023. Portfolio by Vicent Matela</p>
+      <section class="section projects-section" id="projects">
+        <div class="shell">
+          <div class="section-heading section-heading-row reveal">
+            <div>
+              <p class="eyebrow">Selected work</p>
+              <h2>Projects with purpose.</h2>
+            </div>
+            <a class="text-link" href="https://github.com/Matela-cyber" target="_blank" rel="noopener noreferrer">
+              View all on GitHub <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <div class="project-list">
+            <article class="project-card project-ptros reveal">
+              <div class="project-art art-routing" aria-hidden="true">
+                <span class="art-label">LOGISTICS / 01</span>
+                <div class="route-map">
+                  <span class="map-point point-one"></span>
+                  <span class="map-point point-two"></span>
+                  <span class="map-point point-three"></span>
+                  <svg viewBox="0 0 440 190" preserveAspectRatio="none">
+                    <path d="M32 143 C102 141 93 53 178 70 S270 139 325 91 383 58 416 43"></path>
+                  </svg>
+                  <span class="route-caption">LIVE ROUTE · MASERU</span>
+                </div>
+                <span class="art-index">01</span>
+              </div>
+              <div class="project-info">
+                <div class="project-title-row">
+                  <div><p class="project-type">Platform · Logistics</p><h3>PTROS</h3></div>
+                  <span class="project-arrow" aria-hidden="true">↗</span>
+                </div>
+                <p class="project-description">
+                  An advanced delivery and logistics platform built to bring carriers, routes and
+                  real-time shipment activity together.
+                </p>
+                <p class="project-highlights">Real-time tracking · Route optimization · Carrier management · Maps</p>
+                <div class="tag-list"><span>TypeScript</span><span>React 18</span><span>Firebase</span><span>Turbo</span></div>
+                <div class="project-links">
+                  <a href="https://ptros-carrier.vercel.app" target="_blank" rel="noopener noreferrer">Live platform <span aria-hidden="true">↗</span></a>
+                  <a href="https://github.com/Matela-cyber/ptros" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card project-techhub reveal">
+              <div class="project-art art-commerce" aria-hidden="true">
+                <span class="art-label">COMMERCE / 02</span>
+                <div class="store-window">
+                  <div class="store-top"><span></span><span></span><span></span><i>techhub</i></div>
+                  <div class="store-body">
+                    <span>Technology,<br />made accessible.</span>
+                    <div class="product-shape"><i></i></div>
+                    <small>SHOP THE LATEST <b>↗</b></small>
+                  </div>
+                </div>
+                <span class="art-index">02</span>
+              </div>
+              <div class="project-info">
+                <div class="project-title-row">
+                  <div><p class="project-type">Commerce · Web &amp; mobile</p><h3>TechHub Lesotho</h3></div>
+                  <span class="project-arrow" aria-hidden="true">↗</span>
+                </div>
+                <p class="project-description">
+                  A connected e-commerce experience with a customer storefront, admin dashboard and
+                  companion mobile app.
+                </p>
+                <p class="project-highlights">Authentication · Order management · Storefront · Admin tools</p>
+                <div class="tag-list"><span>React</span><span>Firebase</span><span>React Native</span></div>
+                <div class="project-links">
+                  <a href="https://tech-hub-lesotho.vercel.app" target="_blank" rel="noopener noreferrer">Storefront <span aria-hidden="true">↗</span></a>
+                  <a href="https://tech-hub-lesotho-admin.vercel.app" target="_blank" rel="noopener noreferrer">Admin demo <span aria-hidden="true">↗</span></a>
+                  <a href="https://github.com/Matela-cyber/TechHub-Lesotho" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card project-laqs reveal">
+              <div class="project-art art-membership" aria-hidden="true">
+                <span class="art-label">MEMBERSHIP / 03</span>
+                <div class="membership-panel">
+                  <span class="panel-kicker">MEMBER PORTAL</span>
+                  <strong>LAQS<span>.</span></strong>
+                  <i class="panel-rule"></i>
+                  <div class="panel-stats"><span>CPD<br /><b>TRACKING</b></span><span>MEMBER<br /><b>PROFILES</b></span><span>CAREER<br /><b>OPPORTUNITIES</b></span></div>
+                </div>
+                <span class="art-index">03</span>
+              </div>
+              <div class="project-info">
+                <div class="project-title-row">
+                  <div><p class="project-type">Member services · Web</p><h3>LAQS</h3></div>
+                  <span class="project-arrow" aria-hidden="true">↗</span>
+                </div>
+                <p class="project-description">
+                  A professional membership portal that gives members and administrators a clear place
+                  to manage services and opportunities.
+                </p>
+                <p class="project-highlights">Membership management · CPD tracking · Job listings · Profiles</p>
+                <div class="tag-list"><span>React</span><span>Vite</span><span>Firebase</span></div>
+                <div class="project-links">
+                  <a href="https://laqs.vercel.app" target="_blank" rel="noopener noreferrer">Live portal <span aria-hidden="true">↗</span></a>
+                  <a href="https://github.com/Matela-cyber/laqs" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card project-bot reveal">
+              <div class="project-art art-trading" aria-hidden="true">
+                <span class="art-label">AUTOMATION / 04</span>
+                <div class="chart-visual">
+                  <div class="chart-grid"></div>
+                  <svg viewBox="0 0 440 190" preserveAspectRatio="none">
+                    <path d="M20 132 62 120 92 142 133 88 170 100 214 51 253 75 297 40 332 65 378 28 420 41"></path>
+                  </svg>
+                  <span>MT5 <b>RISK-AWARE</b></span>
+                </div>
+                <span class="art-index">04</span>
+              </div>
+              <div class="project-info">
+                <div class="project-title-row">
+                  <div><p class="project-type">Automation · Trading</p><h3>Trading Bot</h3></div>
+                  <span class="project-arrow" aria-hidden="true">↗</span>
+                </div>
+                <p class="project-description">
+                  An automated MetaTrader 5 system exploring a mean-reversion strategy with risk
+                  management and Telegram notifications.
+                </p>
+                <p class="project-highlights">Mean-reversion strategy · Risk management · Telegram alerts</p>
+                <div class="tag-list"><span>Python</span><span>MetaTrader 5</span><span>Telegram</span></div>
+                <div class="project-links">
+                  <a href="https://github.com/Matela-cyber/bot" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section more-section">
+        <div class="shell more-grid reveal">
+          <div>
+            <p class="eyebrow">Also in the workshop</p>
+            <h2>More ways I like to build.</h2>
+          </div>
+          <div class="more-projects" aria-label="Additional projects">
+            <article class="more-project">
+              <div class="more-project-info">
+                <h3>Sesotho Learning Game</h3>
+                <small>Java · JavaFX</small>
+              </div>
+              <div class="more-project-links">
+                <a href="https://github.com/Matela-cyber/sesotho-learning-game" target="_blank" rel="noopener noreferrer" aria-label="Sesotho Learning Game source on GitHub">GitHub <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="more-project">
+              <div class="more-project-info">
+                <h3>Marble Game</h3>
+                <small>JavaFX</small>
+              </div>
+              <div class="more-project-links">
+                <a href="https://github.com/Matela-cyber/Marble-Game" target="_blank" rel="noopener noreferrer" aria-label="Marble Game source on GitHub">GitHub <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="more-project">
+              <div class="more-project-info">
+                <h3>School Management System</h3>
+                <small>C++</small>
+              </div>
+              <div class="more-project-links">
+                <a href="https://github.com/Matela-cyber/School-Management-System" target="_blank" rel="noopener noreferrer" aria-label="School Management System source on GitHub">GitHub <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="more-project">
+              <div class="more-project-info">
+                <h3>Book Store System</h3>
+                <small>C++</small>
+              </div>
+              <div class="more-project-links">
+                <a href="https://github.com/Matela-cyber/Book-store-system" target="_blank" rel="noopener noreferrer" aria-label="Book Store System source on GitHub">GitHub <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="more-project">
+              <div class="more-project-info">
+                <h3>Digital Summit Website</h3>
+                <small>Web</small>
+              </div>
+              <div class="more-project-links">
+                <a href="https://github.com/Matela-cyber/lds" target="_blank" rel="noopener noreferrer" aria-label="Digital Summit Website source on GitHub">GitHub <span aria-hidden="true">↗</span></a>
+                <a href="https://matela-cyber.github.io/lds/" target="_blank" rel="noopener noreferrer">View live <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="more-project">
+              <div class="more-project-info">
+                <h3>Unity Tour Maliba-Matso</h3>
+                <small>Unity · Virtual reality</small>
+              </div>
+              <div class="more-project-links">
+                <a href="https://github.com/Matela-cyber/unity-tour-maliba-matso" target="_blank" rel="noopener noreferrer" aria-label="Unity Tour Maliba-Matso source on GitHub">GitHub <span aria-hidden="true">↗</span></a>
+                <a href="https://unity-tour-maliba-matso.vercel.app" target="_blank" rel="noopener noreferrer">View live <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section education-section" id="education">
+        <div class="shell education-grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Education</p>
+            <h2>Grounded in<br />good foundations.</h2>
+          </div>
+          <div class="education-item reveal">
+            <span class="education-dates">2022 — 2026</span>
+            <div>
+              <h3>BSc Software Engineering with Multimedia</h3>
+              <div class="education-school">
+                <img
+                  class="university-logo"
+                  src="assets/logos/limkokwing.svg"
+                  alt=""
+                  aria-hidden="true"
+                  width="150"
+                  height="46"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <p>Limkokwing University of Creative Technology</p>
+              </div>
+              <span class="education-location">Lesotho</span>
+              <p class="education-cgpa"><strong>CGPA:</strong> 3.19 / 4.00</p>
+            </div>
+            <span class="education-status">Graduate</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="shell contact-inner reveal">
+          <div>
+            <p class="eyebrow">Have a project in mind?</p>
+            <h2>Let’s make something<br />worth using.</h2>
+            <p class="contact-note">Available for full-time roles and thoughtful freelance collaborations.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="button button-light" href="mailto:tebohovmatela@gmail.com">Email me <span aria-hidden="true">↗</span></a>
+            <div class="contact-email-row">
+              <a class="contact-email" href="mailto:tebohovmatela@gmail.com">tebohovmatela@gmail.com</a>
+              <button
+                class="copy-email"
+                type="button"
+                data-copy-email="tebohovmatela@gmail.com"
+                aria-label="Copy email address"
+              >
+                Copy
+              </button>
+            </div>
+            <p class="copy-email-status" role="status" aria-live="polite"></p>
+            <div class="contact-phone-list" aria-label="Phone numbers">
+              <a class="contact-phone" href="tel:+26659510068">+266 5951 0068 <span>Primary</span></a>
+              <a class="contact-phone" href="tel:+26662846473">+266 6284 6473</a>
+            </div>
+            <a class="contact-whatsapp" href="https://wa.me/26659510068" target="_blank" rel="noopener noreferrer">WhatsApp · +266 5951 0068 <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <a class="brand footer-brand" href="#home"><span class="brand-mark">TM</span><span>Teboho Matela</span></a>
+        <div class="footer-links">
+          <a href="https://github.com/Matela-cyber" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/teboho-vicent-matela-527a9a284/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="mailto:tebohovmatela@gmail.com">Email <span aria-hidden="true">↗</span></a>
+        </div>
+        <p>© <span id="year">2026</span> Teboho Vicent Matela · Made with care in Lesotho</p>
+      </div>
     </footer>
+    <script src="script.js" defer></script>
   </body>
 </html>
