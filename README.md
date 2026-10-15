@@ -1,19 +1,50 @@
 # Teboho Vicent Matela — Portfolio
 
-A lightweight, responsive personal portfolio and digital resume built with semantic HTML, CSS and vanilla JavaScript. It is designed to deploy directly to GitHub Pages without a build step.
+A lightweight, responsive personal portfolio and digital resume built with semantic HTML, CSS and vanilla JavaScript. The site is a static project site (index.html at repository root) ready to publish on GitHub Pages without any build step.
 
-## Run locally
+Live demo
 
-Open `index.html` in a browser, or serve the repository root with any static file server.
+- Project site (GitHub Pages): https://matela-cyber.github.io/my-portfolio/
 
-## Deploy to GitHub Pages
+What’s included
 
-In the repository's GitHub Pages settings, publish from the root of the `main` branch (or the branch you use for deployment). The site has no install or build step.
+- index.html — single-page portfolio landing and resume
+- styles.css — styling
+- script.js — small interactive bits
+- assets/ and several image files used for portraits and project artwork
 
-## Performance
+Quick local preview
 
-- The portrait is served as a 640-pixel WebP image at approximately 18 KB.
-- Project artwork is drawn in lightweight inline HTML/CSS/SVG; no large screenshots or image libraries are downloaded.
-- Technology marks, the Limkokwing University logo, and Unity and Blender marks are lightweight, locally stored SVGs; skill icons load lazily.
-- The portrait is prioritized as the hero image.
-- Google Fonts are optional; the page falls back to system sans-serif fonts if they are unavailable.
+1. Open index.html in a browser, or serve the repo root with a static server. Examples:
+
+   - Python 3: `python -m http.server 8000` and open http://localhost:8000
+   - Node (http-server): `npx http-server -p 8000` and open http://localhost:8000
+
+Deployment (GitHub Pages)
+
+This repository is already structured for GitHub Pages; to publish the site from GitHub:
+
+1. In your repository on GitHub, go to Settings → Pages (or open: https://github.com/Matela-cyber/my-portfolio/settings/pages).
+2. Under "Build and deployment" / "Source", choose:
+   - Branch: `main`
+   - Folder: `/ (root)`
+3. Save. After a minute or two the site will be published at:
+
+   https://matela-cyber.github.io/my-portfolio/
+
+4. (Optional) Enable "Enforce HTTPS" in the Pages settings once the site is published.
+
+Notes and suggestions
+
+- Large image files increase repository size and page load time. Consider optimizing large JPEGs/PNGs (resize, convert to WebP, or compress) and storing only web-sized images in `assets/`.
+- Keep critical CSS in `styles.css` small; defer or lazy-load non-critical images using the `loading="lazy"` attribute to improve perceived performance.
+- If you want a custom domain, add it in Pages settings and add a `CNAME` file with your domain (or use the Pages UI which will create the CNAME automatically).
+
+Want me to:
+
+- Optimize images (I can create compressed WebP versions and update references)?
+- Add a small GitHub Actions workflow to validate and auto-deploy (not required for Pages, but useful if you later build)?
+
+Credits
+
+Built by Teboho Vicent Matela — Matela-cyber
