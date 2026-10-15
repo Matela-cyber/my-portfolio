@@ -666,6 +666,22 @@ body[data-theme="dark"] .skill-tags img[src$="unity.svg"] {
   padding-inline: 9px;
 }
 
+.portfolio-folder-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 13px;
+  color: var(--muted);
+  font-size: 0.69rem;
+  font-weight: 700;
+  transition: color 160ms ease, gap 160ms ease;
+}
+
+.portfolio-folder-link:hover {
+  gap: 10px;
+  color: var(--ink);
+}
+
 .projects-section {
   background: var(--surface);
 }
